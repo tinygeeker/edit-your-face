@@ -1,56 +1,70 @@
-ThinkPHP 6.0
-===============
+# Edit-your-face
+🌈 基于PHP和PYTHON的自定义人脸编辑，可以上传自己的自拍，调整自己的年龄，眉眼间距，性别变化，眼睛大小等等
 
-> 运行环境要求PHP7.1+，兼容PHP8.0。
+## 项目预览
 
-[官方应用服务市场](https://market.topthink.com) | [`ThinkAPI`——官方统一API服务](https://docs.topthink.com/think-api)
+![donate](https://tinygeeker.github.io/tinygeeker/p/edityourface.png)
 
-ThinkPHPV6.0版本由[亿速云](https://www.yisu.com/)独家赞助发布。
+## 安装使用
 
-## 主要新特性
+* 先安装PHP环境
+```
+# 切换到项目目录
+cd edit-your-face
 
-* 采用`PHP7`强类型（严格模式）
-* 支持更多的`PSR`规范
-* 原生多应用支持
-* 更强大和易用的查询
-* 全新的事件系统
-* 模型事件和数据库事件统一纳入事件系统
-* 模板引擎分离出核心
-* 内部功能中间件化
-* SESSION/Cookie机制改进
-* 对Swoole以及协程支持改进
-* 对IDE更加友好
-* 统一和精简大量用法
+# 先更新composer
+composer self-update
 
-## 安装
+# 下载依赖
+composer install
+```
 
-~~~
-composer create-project topthink/think tp 6.0.*
-~~~
+* 再安装PYTHON环境
+```
+# 切换到项目目录
+cd edit-your-face/python/PaddleGAN
 
-如果需要更新框架使用
-~~~
-composer update topthink/framework
-~~~
+# 安装环境依赖
+pip install cmake -i https://mirror.baidu.com/pypi/simple
+pip install boost -i https://mirror.baidu.com/pypi/simple
+pip install numpy -i https://mirror.baidu.com/pypi/simple
+pip install dlib==19.8.1 -i https://mirror.baidu.com/pypi/simple
 
-## 文档
+# 安装项目依赖，这里一定要设置全局pip源
+pip install -r requirements.txt
 
-[完全开发手册](https://www.kancloud.cn/manual/thinkphp6_0/content)
+# 安装环境
+python setup.py develop
 
-## 参与开发
+# CPU版本
+pip install paddlepaddle
+```
 
-请参阅 [ThinkPHP 核心框架包](https://github.com/top-think/framework)。
+* 启动环境
+```
+cd edit-your-face
 
-## 版权信息
+# 启动网页
+think php run
 
-ThinkPHP遵循Apache2开源协议发布，并提供免费使用。
+# 启动websocket
+think php worker:server
+```
 
-本项目包含的第三方源码和二进制文件之版权信息另行标注。
+## 加入我们
 
-版权所有Copyright © 2006-2020 by ThinkPHP (http://thinkphp.cn)
+想学习更多的技术知识，就关注我的个人公众号吧。 :blush:
 
-All rights reserved。
+![donate](https://tinygeeker.github.io/tinygeeker/u/attention/matrix.jpeg)
 
-ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
+## 浏览器支持情况
 
-更多细节参阅 [LICENSE.txt](LICENSE.txt)
+| [<img src="https://tinygeeker.github.io/tinygeeker/svg/ie.svg" alt="IE / Edge" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://tinygeeker.github.io/tinygeeker/svg/firefox.svg" alt="Firefox" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://tinygeeker.github.io/tinygeeker/svg/chrome.svg" alt="Chrome" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://tinygeeker.github.io/tinygeeker/svg/safari.svg" alt="Safari" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://tinygeeker.github.io/tinygeeker/svg/sogou.svg" alt="Sogou" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>Sogou | [<img src="https://tinygeeker.github.io/tinygeeker/svg/uc.svg" alt="UC" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>UC | [<img src="https://tinygeeker.github.io/tinygeeker/svg/360.svg" alt="360" width="24px" height="24px" />](https://godban.github.io/browsers-support-badges/)</br>360 |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| 所有版本 | 所有版本 | 所有版本 | 所有版本 | 所有版本 | 所有版本 | 所有版本 |
+
+## License
+
+[MIT](https://github.com/tinygeeker/edit-your-face/blob/main/LICENSE)
+
+Copyright (c) 2021-present tinygeeker
