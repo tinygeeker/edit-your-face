@@ -1,8 +1,11 @@
 # Edit-your-face
 🌈 基于PHP和PYTHON的自定义人脸编辑，可以上传自己的自拍，调整自己的年龄，眉眼间距，性别变化，眼睛大小等等
 
-# Edit-your-face
-🌈 基于PHP和PYTHON的自定义人脸编辑，可以上传自己的自拍，调整自己的年龄，眉眼间距，性别变化，眼睛大小等等
+<p align="center">
+  <img src="https://img.shields.io/badge/python-==3.10.6-ff69b4.svg" alt="python">
+  <img src="https://img.shields.io/badge/php-==7.2.19-brightgreen.svg" alt="php">
+  <img src="https://img.shields.io/badge/thinkphp-==6.0.0-6bb59a.svg" alt="thinkphp">
+</p>
 
 ## 项目预览
 
