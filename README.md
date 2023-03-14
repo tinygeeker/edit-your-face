@@ -14,7 +14,7 @@
 ## 安装使用
 
 * 先安装PHP环境
-```
+```shell
 # 切换到项目目录
 cd edit-your-face
 
@@ -26,7 +26,7 @@ composer install
 ```
 
 * 再安装PYTHON环境
-```
+```shell
 # 切换到项目目录
 cd edit-your-face/python/PaddleGAN
 
@@ -47,7 +47,7 @@ pip install paddlepaddle
 ```
 
 * 启动环境
-```
+```shell
 cd edit-your-face
 
 # 启动网页
